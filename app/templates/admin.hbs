@@ -1,4 +1,4 @@
-<h1>bustle</h1>
+<h1>bustle admin</h1>
 
 <ul>
   {{#each model as |story|}}
@@ -6,4 +6,4 @@
   {{/each}}
 </ul>
 
-{{#link-to 'admin'}}admin{{/link-to}}
+{{new-story saveStory="saveStory"}}
