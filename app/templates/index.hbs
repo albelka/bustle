@@ -2,6 +2,6 @@
 
 <ul>
   {{#each model as |story|}}
-  <li>{{story.author}} wrote {{story.title}} {{story.timeAgo}} hours ago</li>
+  <li>{{#link-to 'story' story.id}}{{story.author}} wrote {{story.title}} {{story.timeAgo}} hours ago{{/link-to}}</li>
   {{/each}}
 </ul>
