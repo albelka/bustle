@@ -1,0 +1,7 @@
+<h1>bustle</h1>
+
+<ul>
+  {{#each model as |story|}}
+  <li>{{story.author}} wrote {{story.title}} {{story.timeAgo}} hours ago</li>
+  {{/each}}
+</ul>
